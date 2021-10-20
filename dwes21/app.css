@@ -1,0 +1,31 @@
+.accordion {
+    background-color: rgb(75, 91, 238);
+    color: rgb(0, 0, 0);
+    cursor: pointer;
+    padding: 18px;
+    width: 100%;
+    text-align: left;
+    border: none;
+    outline: none;
+    transition: 0.4s;
+}
+
+.active,
+.accordion:hover {
+    background-color: rgb(114, 180, 235);
+}
+
+.panel {
+    padding: 0 18px;
+    background-color: rgb(230, 219, 219);
+    display: none;
+    overflow: hidden;
+}
+
+h1 {
+    text-align: center;
+}
+
+body {
+    background-color: rgb(230, 219, 219);
+}
