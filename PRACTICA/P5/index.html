@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Práctica P5</title>
+    <link rel="stylesheet" href="css/styless.css">
+    <script src="js/persona.js"></script>
+    <script src="js/tabla.js"></script>
+</head>
+
+<body class="html">
+    <h1>Práctica P5</h1>
+    <table class="table" id="tabla"></table><br>
+    <div>
+        <button type="button" onclick="añadirnuevapersona(prompt('Inserte su nombre'), prompt('Inserte su primer apellido'), prompt('Inserta su segundo apellido'))">Añadir nueva persona</button>
+        <button type="button" onclick="borrarultimapersonatabla()">Borrar Última Persona de la tabla</button>
+    </div>
+    <script>
+
+        updateTabla();
+
+    </script>
+</body>
+</html>

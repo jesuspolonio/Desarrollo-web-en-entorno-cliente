@@ -1,0 +1,33 @@
+table {
+
+  width: 20%;
+  border: 1px solid #000;
+  text-align:center;
+  margin: 0 auto;
+
+}
+
+th, td {
+
+  width: 25%;
+  text-align: left;
+  vertical-align: top;
+  border: 1px solid #000;
+  border-collapse: collapse;
+  padding: 0.3em;
+
+}
+
+caption {
+
+  padding: 0.3em;
+
+}
+
+.html {
+
+  background-color: greenyellow;
+  background-repeat: repeat;
+  text-align:center;
+  
+}
