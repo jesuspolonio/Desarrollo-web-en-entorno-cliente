@@ -27,6 +27,6 @@
     <li><a href="https://github.com/jesuspolonio/Desarrollo-web-en-entorno-cliente/blob/main/PRACTICA/P4/p4.md">Práctica 4</a></li>
   </ul>
  <ul>
-    <li><a href="">Práctica 5</a></li>
+    <li><a href="https://github.com/jesuspolonio/Desarrollo-web-en-entorno-cliente/tree/main/PRACTICA/P5">Práctica 5</a></li>
   </ul>
 </details>
