@@ -1,0 +1,59 @@
+<html>
+<head>
+	<title>P6</title>
+
+	<link rel=“stylesheet” href=“css/estilos.css”>
+	<script language="javascript">
+	
+	function Enviar(){
+
+		var formulario="";
+		var nombre=document.form1.nombre.value;
+		var apellido=document.form1.apellido.value;
+		var email=document.form1.email.value;
+		var clave1=document.form1.clave1.value;
+		var sexo=document.form1.sexo.value;
+
+		alert("\nNombre: " + nombre + "\nApellido: " + apellido + "\n" + "E-mail: " + email + "\nClave: " + clave1 + "\nSexo: " + sexo);
+
+	}
+
+	</script>
+
+	</head>
+	<body>
+	<form name="form1" method="POST" action="">
+	<table border="0" cellpadding="0" cellspacing="0" width="400">
+	<tr>
+		<td width="50%">Ingresa el nombre: </td>
+		<td><input type="text" id="nombre"></td>
+	</tr>
+	<tr>
+		<td width="50%">Ingresa el apellido: </td>
+		<td><input type="text" id="apellido"></td>
+	</tr>
+	<tr>
+		<td width="50%">Ingresa el correo electronico: </td>
+		<td width="50%"><input type="text" id="email"></td>
+	</tr>
+	<tr>
+		<td width="50%">Ingresa una contraseña: </td>
+		<td width="50%"><input type="password" id="clave1"></td>
+	</tr>
+	<tr>
+		<td width="50%">Sexo: </td>
+		<td width="50%">
+		<input type="radio" name="sexo" id="Genres" value="Masculino">Masculino&nbsp;
+		<input type="radio" name="sexo" id="Genres" value="Femenino">Femenino&nbsp;
+		</td>
+	</tr>
+	<tr>
+		<td width="50%" align="center">
+			<button type="button" name="boton" onClick="Enviar()">Enviar</button>
+		</td>
+	</tr>
+	</table>
+
+	</form>
+</body>
+</html>
