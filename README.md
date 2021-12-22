@@ -30,7 +30,7 @@
     <li><a href="https://github.com/jesuspolonio/Desarrollo-web-en-entorno-cliente/tree/main/PRACTICA/P5">Práctica 5</a></li>
   </ul>
 </details>
-summary>Tema 8</summary>
+<summary>Tema 8</summary>
   <ul>
-    <li><a href="">Práctica 6</a></li>
+    <li><a href="https://github.com/jesuspolonio/Desarrollo-web-en-entorno-cliente/tree/main/PRACTICA/P6">Práctica 6</a></li>
   </ul>
