@@ -1,0 +1,75 @@
+<html>
+<head>
+	<title>P7s</title>
+
+	<link rel=“stylesheet” href=“css/estilos.css”>
+
+	</head>
+	<body>
+    
+	<br name="form1" method="POST" action="server.php">
+        Ingresa el nombre:
+        <input type="text" id="nombre"></br>
+		Ingresa una contraseña:
+		<input type="password" id="clave1"></br>
+		<p id="mayusculas"></p></br>
+        <a id="out">He olvidado mi contraseña</a></br>
+		<button type="button" name="boton" onClick="Enviar()">Enviar</button>
+	</form></br>
+	<p id="longitud"></p>
+
+	<script language="javascript">
+
+		let password = document.getElementById("clave1");
+	
+		password.addEventListener("keyup", function (event){
+	
+			let may = document.getElementById("mayusculas");
+	
+			if(event.getModifierState("CapsLock")){
+	
+				may.style.color = "lime";
+				may.textContent = "¡Mayusculas Activadas!";
+	
+			} else {
+	
+				may.textContent = " ";
+	
+			}
+		});
+
+		let longitud = document.getElementById("longitud");
+
+		window.addEventListener("resize", longitudWindow);
+
+		function longitudWindow(){
+
+			longitud.textContent = "Las medidas de la ventana son: " + window.innerHeight + " x " + window.innerWidth;
+		}
+
+		longitudWindow();
+
+		let out = document.getElementById("out");
+
+		out.addEventListener("click", function (){
+
+			window.setTimeout(alerta, 500);
+
+			function alerta(){
+
+				alert("No tienes permiso de superusuario");
+
+			}
+
+		});
+
+		out.addEventListener("dblclick", function (){
+
+			window.location.href = "https://www.youtube.com/watch?v=dQw4w9WgXcQ";
+
+		});
+	
+		</script>
+
+</body>
+</html>
