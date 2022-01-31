@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1"/>
+	<title>Star Wars</title>	
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+	<link rel="stylesheet" href="css/intro.css">
+</head>
+<body>
+	<div class="starwars-page">
+		<div class="starwars-intro">
+			<h1 class="text-center">Episodio 1</h1>
+			<br>
+			<p>
+				Es un periodo de insurgencia. Las naves espaciales rebeldes, que atacan desde una base oculta en una luna de Yahin, han obtenido una sorprendente victoria contra el legítimo reinado del Imperio Galáctico.
+			</p>
+			<p>
+				La fuerza de mantenimiento de la paz por excelencia del Imperio, LA ESTRELLA DE LA MUERTE, fue destruida debido a un fallo de diseño imprevisto. Sin este elemento disuasorio, el imperio de la ley está en peligro. Se avecina el caos.
+			</p>
+			<p>
+				Durante los diecinueve años posteriores a la desaparición de los Jedi y su doloroso renacimiento en Mustafarm Volcánica, el Lord Sith DARTH VADER ha servido fielmente a su maestro. Pero ahora, ha fallado al Emperador y debe pagar el precio...
+			</p>
+		</div>
+	</div>
+	<audio src="cancion.mp3"autoplay></audio>
+	<script src="http://code.jquery.com/jquery-3.1.1.slim.min.js"></script>	
+	<script src="introduc.js"></script>
+    <script type="text/javascript">
+
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-36251023-1']);
+  _gaq.push(['_setDomainName', 'jqueryscript.net']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+  $("svg").css("visibility", "visible");
+
+  $("svg").css('borderSpacing', 1).animate({borderSpacing: 0.05},
+  {
+	  step: function(now){
+		  $(this).css('transform', 'scale('+now+')').animate({opacity: 0}, 2000);
+	  },
+	  duration: 13000,
+	  easing: "linear"});
+
+
+</script>
+</body>
+</html>
