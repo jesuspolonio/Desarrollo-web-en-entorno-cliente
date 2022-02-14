@@ -26,13 +26,34 @@
   <ul>
     <li><a href="https://github.com/jesuspolonio/Desarrollo-web-en-entorno-cliente/blob/main/PRACTICA/P4/p4.md">Práctica 4</a></li>
   </ul>
- <ul>
-    <li><a href="https://github.com/jesuspolonio/Desarrollo-web-en-entorno-cliente/tree/main/PRACTICA/P5">Práctica 5</a></li>
-  </ul>
 </details>
 <details>
-<summary>Tema 8</summary>
+<summary>Tema 3</summary>
+  <ul>
+    <li><a href="https://github.com/jesuspolonio/Desarrollo-web-en-entorno-cliente/tree/main/PRACTICA/P5">Práctica 5</a></li>
+  </ul>
+ </details>
+ <details>
+ <summary>Tema 8</summary>
   <ul>
     <li><a href="https://github.com/jesuspolonio/Desarrollo-web-en-entorno-cliente/tree/main/PRACTICA/P6">Práctica 6</a></li>
+  </ul>
+ </details>
+ <details>
+ <summary>Tema 9</summary>
+  <ul>
+    <li><a href="https://github.com/jesuspolonio/Desarrollo-web-en-entorno-cliente/tree/main/PRACTICA/P6">Práctica 7</a></li>
+  </ul>
+ </details>
+ <details>
+ <summary>Tema 11</summary>
+  <ul>
+    <li><a href="https://github.com/jesuspolonio/Desarrollo-web-en-entorno-cliente/tree/main/PRACTICA/P6">Práctica 8</a></li>
+  </ul>
+ </details>
+ <details>
+ <summary>Tema 12</summary>
+  <ul>
+    <li><a href="https://github.com/jesuspolonio/Desarrollo-web-en-entorno-cliente/tree/main/PRACTICA/P6">Práctica 9</a></li>
   </ul>
  </details>
