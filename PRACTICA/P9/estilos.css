@@ -1,0 +1,25 @@
+body{
+    
+    background-image: url(https://static.vecteezy.com/system/resources/previews/003/776/341/non_2x/holographic-abstract-blurred-background-in-light-colors-vector.jpg);
+}
+
+.centros {
+    display: flex;
+    justify-content: space-around;
+}
+
+.bares {
+    display: flex;
+    justify-content: space-around;
+}
+
+.mapa {
+    display: flex;
+    justify-content: space-around;
+}
+
+input{
+    border: none;
+    border-radius: 50%;
+    height: 3em;
+}

@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/css/estilos.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <title>Centros Medac</title>
+  </head>
+  <body >
+    <div class="centros"></div>
+    <div class="bares"></div>
+    <div class="mapa"></div>
+    <script>
+      $(document).ready(function () {
+        $.ajax({
+          type: "GET",
+          url: "centros.xml",
+          dataType: "xml",
+          success: function (xml) {
+            $(xml)
+              .find("centro")
+              .each(function () {
+                nombre = $(this).find("nombre").text();
+                direccion = $(this).find("direccion").text();
+                latitud = $(this).find("latitud").text();
+                longitud = $(this).find("longitud").text();
+
+                $(".centros").append(
+                  "<div><p><v>Nombre: </v>" + nombre + "<p>" + "<p><v>Direccion: </v>" + direccion + "</p>" + "<p><v>Latitud: </v>" +     latitud + "</p>" + "<p><v>Longitud: </v>" + longitud + `</p><input class='btn${nombre}' type='button' value='Bares Cercanos'></div>`);
+              });
+          },
+        });
+
+        let xhr = null;
+
+        $(document).on("click", ".btnMEDAC_Cordoba", function () {
+          $(".bares").empty();
+          xhr = $.ajax({
+            type: "GET",
+            url: "baresCordoba.xml",
+            dataType: "xml",
+            success: function (xml) {
+              $(xml)
+                .find("bar")
+                .each(function () {
+                  centro = $(this).find("centro").text();
+                  nombre = $(this).find("nombre").text();
+                  direccion = $(this).find("direccion").text();
+                  latitud = $(this).find("latitud").text();
+                  longitud = $(this).find("longitud").text();
+                  puntuacion = $(this).find("puntuacion").text();
+
+                  $(".bares").append(
+                    "<div><p><v>Nombre: </v>" + nombre + "</p>" + "<p><v>Direccion: </v>" + direccion + "</p>" + "<p><v>Latitud: </v>" + latitud + "</p>" + "<p><v>Longitud: </v>" + longitud + "</p>" + "<p><v>Puntuacion: </v>" + puntuacion);
+                });
+              $(".mapa").empty();
+              $(".mapa").append(
+                `<img width="600" src="https://maps.googleapis.com/maps/api/staticmap?center=${centro}&zoom=17&scale=1&size=600x300&maptype=roadmap&key=AIzaSyCe6vLtNKcC6H585-oKcNXXUDA2fOALEs8&format=png&visual_refresh=true" alt="Google Map of MEDAC Arena">`
+              );
+            },
+          });
+        });
+
+        $(document).on("click", ".btnMEDAC_Arena", function () {
+          $(".bares").empty();
+          $.ajax({
+            type: "GET",
+            url: "baresArena.xml",
+            dataType: "xml",
+            success: function (xml) {
+              $(xml)
+                .find("bar")
+                .each(function () {
+                  centro = $(this).find("centro").text();
+                  nombre = $(this).find("nombre").text();
+                  direccion = $(this).find("direccion").text();
+                  latitud = $(this).find("latitud").text();
+                  longitud = $(this).find("longitud").text();
+                  puntuacion = $(this).find("puntuacion").text();
+
+                  $(".bares").append(
+                    "<div><p><v class='text-blue-300 font-bold'>Nombre: </v>" + nombre + "</p>" + "<p><v>Direccion: </v>" + direccion + "</p>" + "<p><v>Latitud: </v>" + latitud + "</p>" + "<p><v>Longitud: </v>" + longitud + "</p>" + "<p><v>Puntuacion: </v>" + puntuacion);
+                });
+              $(".mapa").empty();
+              $(".mapa").append(
+                `<img width="600" src="https://maps.googleapis.com/maps/api/staticmap?center=${centro}&zoom=17&scale=1&size=600x300&maptype=roadmap&key=AIzaSyCe6vLtNKcC6H585-oKcNXXUDA2fOALEs8&format=png&visual_refresh=true" alt="Google Map of MEDAC Arena">`
+              );
+            },
+          });
+        });
+      });
+    </script>
+  </body>
+</html>
